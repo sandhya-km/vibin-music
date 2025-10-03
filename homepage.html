@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Homepage</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="layout">
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <h2>🎵 Vibin Music</h2>
+      <input type="text" id="search" placeholder="Search songs...">
+      <h3>❤️ Favorites</h3>
+      <div id="favorites"></div>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main">
+      <section>
+        <h2>English Songs</h2>
+        <div class="song-row" id="englishSongs"></div>
+      </section>
+
+      <section>
+        <h2>Hindi Songs</h2>
+        <div class="song-row" id="hindiSongs"></div>
+      </section>
+
+      <section>
+        <h2>Telugu Songs</h2>
+        <div class="song-row" id="teluguSongs"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ✅ Supabase client + homepage logic -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="js/homepage.js"></script>
+</body>
+</html>

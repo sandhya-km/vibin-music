@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>Admin Dashboard</h2>
+
+  <form id="addSongForm">
+    <input type="text" id="title" placeholder="Song Title" required><br>
+    <input type="text" id="artist" placeholder="Artist Name" required><br>
+
+    <label>Choose Image:</label><br>
+    <input type="file" id="imageFile" accept="image/*" required><br>
+
+    <label>Choose Audio:</label><br>
+    <input type="file" id="audioFile" accept="audio/*" required><br>
+
+    <label>Language:</label><br>
+    <select id="language" required>
+      <option value="">Select Language</option>
+      <option value="English">English</option>
+      <option value="Hindi">Hindi</option>
+      <option value="Telugu">Telugu</option>
+    </select><br>
+
+    <button type="submit">Add Song</button>
+  </form>
+
+  <h3>Uploaded Songs</h3>
+  <div id="songList"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
